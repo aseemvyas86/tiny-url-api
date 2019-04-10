@@ -1,0 +1,42 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+    <Folder Include="Data\" />
+    <Folder Include="Services\" />
+    <Folder Include="Utilities\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
+    <PackageReference Include="StackExchange.Redis" Version="2.0.600" />
+    <PackageReference Include="Unity" Version="5.10.3" />
+    <PackageReference Include="Unity.Microsoft.DependencyInjection" Version="5.10.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\static\static\css\main.b6c42dd8.chunk.css" />
+    <Content Remove="wwwroot\static\static\css\main.b6c42dd8.chunk.css.map" />
+    <Content Remove="wwwroot\static\static\js\2.18719b4a.chunk.js" />
+    <Content Remove="wwwroot\static\static\js\2.18719b4a.chunk.js.map" />
+    <Content Remove="wwwroot\static\static\js\main.731877d8.chunk.js" />
+    <Content Remove="wwwroot\static\static\js\main.731877d8.chunk.js.map" />
+    <Content Remove="wwwroot\static\static\js\runtime~main.a8a9905a.js" />
+    <Content Remove="wwwroot\static\static\js\runtime~main.a8a9905a.js.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="wwwroot\static\static\css\main.b6c42dd8.chunk.css" />
+    <None Include="wwwroot\static\static\css\main.b6c42dd8.chunk.css.map" />
+    <None Include="wwwroot\static\static\js\2.18719b4a.chunk.js" />
+    <None Include="wwwroot\static\static\js\2.18719b4a.chunk.js.map" />
+    <None Include="wwwroot\static\static\js\main.731877d8.chunk.js" />
+    <None Include="wwwroot\static\static\js\main.731877d8.chunk.js.map" />
+    <None Include="wwwroot\static\static\js\runtime~main.a8a9905a.js" />
+    <None Include="wwwroot\static\static\js\runtime~main.a8a9905a.js.map" />
+  </ItemGroup>
+</Project>
